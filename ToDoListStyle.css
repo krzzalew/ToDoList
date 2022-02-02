@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    color: chocolate;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid chocolate;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto;
+    padding: 5px;
+}
+
+#input-task {
+    border: none;
+    border-bottom: 2px solid chocolate;
+    flex: 1 1;
+    font-size: medium;
+    margin: 3px;
+    outline: none;
+    transition: 0.4s;
+}
+
+#input-task:focus {
+    background-color: #EEE;
+    border-radius: 5px;
+}
+
+#add-task-button {
+    border: 2px solid chocolate;
+    border-radius: 5px;
+    color: chocolate;
+    flex: 0 0 100px;
+    font-size: medium;
+    font-weight: bold;
+    margin: 3px;
+    padding: 5px;
+    transition: 0.4s;
+}
+
+#add-task-button:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+#add-task-button:disabled,
+#add-task-button:disabled:hover {
+    background-color: #EEE;
+    border-color: #F5D4BC;
+    color: #F5D4BC;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+#task-list li {
+    align-items: center;
+    border-radius: 5px;
+    cursor: move;
+    display: flex;
+    margin: 3px;
+    padding: 3px;
+}
+
+#task-list li:hover {
+    background-color: #EEE;
+}
+
+#task-list li span {
+    flex: 100%;
+    padding: 5px;
+}
+
+input[type='checkbox'] {
+    transform: scale(1.5);
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.up-btn,
+.down-btn,
+.delete-btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    height: 2em;
+    width: 2.5em;
+    margin: 2px;
+    transition: 0.3s;
+}
+
+.up-btn:hover,
+.down-btn:hover {
+    background-color: rgb(236, 169, 121);
+}
+
+.delete-btn:hover {
+    background-color: red;
+}
+
+.highlight {
+    background-color: rgb(236, 169, 121);
+}
+
+.option {
+    box-shadow: 0 0 5px;
+}
